@@ -4,7 +4,7 @@ package pino;
 
 public class Stack {
 	
-	private ListItem top;
+	ListItem top;
 	private int size;
 	
 	public Stack() {

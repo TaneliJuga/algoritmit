@@ -24,7 +24,7 @@ public class Stack {
             // päivitä linkki
             ListItem temp = top;
             top = top != null ? top.getLink() : null;
-            size--;
+            size = Math.min(size-1, 0);
             return temp;
 	}
 	public int amount() {
