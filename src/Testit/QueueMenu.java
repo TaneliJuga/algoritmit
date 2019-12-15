@@ -1,8 +1,10 @@
-package pino;
+package Testit;
         
+import pino.*;
 
 
-public class Menu {
+
+public class QueueMenu {
 //main alkaa-----------------------------------------------------------------------------
         public static void main(String[] args) {
 
@@ -13,13 +15,13 @@ public class Menu {
 //printMenu alkaa------------------------------------------------------------------
         private static void printMenu() {
                 char select;
-                Stack s = new Stack(); // pino-olio
+                Queue q = new Queue(); // pino-olio
                 String data; // Pinon data-kenttä
                 do {
 
                         System.out.println("\n\t\t\t1. Alkion lisääminen.");
                         System.out.println("\t\t\t2. Alkion poistaminen.");
-                        System.out.println("\t\t\t3. Pinon sisältö.");
+                        System.out.println("\t\t\t3. Jonon sisältö.");
                         System.out.println("\t\t\t4. Alkioiden lukumäärä.");
                         System.out.println("\t\t\t5. lopetus ");
                         System.out.print("\n\n"); // tehdään tyhjiä rivejä
@@ -28,20 +30,20 @@ public class Menu {
                         case '1':
                             System.out.println("Anna alkion sisältö (merkkijono)");
                             data = new String(Lue.rivi());
-                            s.push(data);
+                            q.enqueue(data);
                             break;
                         case '2':
-                            ListItem item = s.pop();
+                            String item = q.dequeue();
                             if (item == null)
-                                System.out.println("Pino on tyhjä");
+                                System.out.println("Jono on tyhjä");
                             else
-                                System.out.println("Poistettu alkio: "+item.getData());
+                                System.out.println("Poistettu alkio: "+item);
                             break;
                         case '3':
-                            s.printItems();
+                            q.printItems();
                             break;
                         case '4':
-                            System.out.println("Lukumäärä = "+s.amount());
+                            System.out.println("Lukumäärä = "+q.amount());
                             break;
                         case '5':
                             break;

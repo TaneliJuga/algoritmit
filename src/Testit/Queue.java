@@ -1,4 +1,6 @@
-package pino;
+package Testit;
+
+import pino.*;
 
 
 

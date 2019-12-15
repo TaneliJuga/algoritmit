@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pino;
+package Testit;
+
+import pino.*;
 
 /**
  *
  * @author tanel
  */
-interface Iterator {
-    boolean hasNext();
-    Object next();
+public interface Iterable {
+    public Iterator getIterator();
 }

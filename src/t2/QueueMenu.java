@@ -1,5 +1,7 @@
-package pino2;
+package t2;
         
+import pino2.*;
+
 public class QueueMenu {
 //main alkaa-----------------------------------------------------------------------------
         public static void main(String[] args) {

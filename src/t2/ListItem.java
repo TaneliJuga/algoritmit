@@ -1,5 +1,6 @@
-package pino2;
-        
+package t2;
+
+
 public class ListItem {
 	private String data; // datamuuttuja
 	private ListItem next; // viite seuraaja-alkioon

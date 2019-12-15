@@ -3,12 +3,13 @@
  * and open the template in the editor.
  */
 
-package test;
+package t3;
 
 /**
  *
  * @author kamaj
  */
+import lajitteludemo.*;
 import java.io.*;
 public class Lue {
 /*************************************** Arto Wikla 1998**********
@@ -92,3 +93,4 @@ Operaatiot ovat sitkeitä, ne VAATIVAT kelvollisen syötteen!
     }
   }
 }
+

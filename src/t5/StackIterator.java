@@ -1,4 +1,4 @@
-package t4;
+package t5;
 
 interface Iterator {
     boolean hasNext();

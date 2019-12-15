@@ -1,6 +1,7 @@
-package pino;
+package Testit;
         
 
+import pino.*;
 import java.io.*;
 public class Lue {
 /*************************************** Arto Wikla 1998**********

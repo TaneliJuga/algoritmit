@@ -1,4 +1,4 @@
-package pino2;
+package t5;
         
 import java.io.*;
 public class Lue {

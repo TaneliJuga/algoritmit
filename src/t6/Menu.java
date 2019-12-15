@@ -1,5 +1,4 @@
 package t6;
-import pino2.Lue;
 
 public class Menu {
 //main alkaa-----------------------------------------------------------------------------

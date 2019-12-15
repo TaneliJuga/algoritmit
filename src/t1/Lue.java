@@ -1,5 +1,4 @@
-package t4;
-        
+package t1;
 import java.io.*;
 public class Lue {
 /*************************************** Arto Wikla 1998**********

@@ -1,5 +1,4 @@
-package pino2;
-
+package t2;
 
 public class Queue {
 	

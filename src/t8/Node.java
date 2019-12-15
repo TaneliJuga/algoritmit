@@ -36,7 +36,6 @@ public class Node {
     }
     public void setLeft(BinaryTree tree) {
         left = tree;
-        tree.s
     }
     public void setRight(BinaryTree tree) {
         right = tree;

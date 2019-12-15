@@ -1,5 +1,5 @@
-package pino2;
-        
+package t1;
+
 public class Menu {
 //main alkaa-----------------------------------------------------------------------------
         public static void main(String[] args) {
