@@ -27,20 +27,16 @@ public class Stack {
 
     // operaatio, joka tulostaa pinon sisällön
     public void printItems(){
-        String string = "";
         Iterator<String> iterator = list.iterator();
         StringBuilder sb = new StringBuilder();
-//        while(iterator.hasNext()){
-//            sb.append(", ").append(iterator.next());
-//        }
-        //System.out.println(sb.substring(2));
+
         class StateMachine{
             private Consumer<String> operation;
-            private Consumer<String> operation1 = (s) -> {sb.append(", ").append(s);};
-            private Consumer<String> operation2 = (s) -> {sb.append(s); operation = operation1;};
+            private Consumer<String> appendSeparatorAndString = (s) -> {sb.append(", ").append(s);};
+            private Consumer<String> appendString = (s) -> {sb.append(s); operation = appendSeparatorAndString;};
             
             public StateMachine(){
-                operation = operation2;
+                operation = appendString;
             } 
             
             public void run(){
@@ -53,12 +49,5 @@ public class Stack {
         StateMachine st = new StateMachine();
         st.run();
         System.out.println(sb.toString());
-//        
-//        Iterator<String> iterator = list.iterator();
-//        StringBuilder sb = new StringBuilder();
-//        while(iterator.hasNext()){
-//            sb.append(", ").append(iterator.next());
-//        }
-//        System.out.println(sb.substring(2));
     }
 }
